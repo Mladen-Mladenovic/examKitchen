@@ -15,7 +15,7 @@ import base.BaseExamKitchen;
 
 public class TestExamKitchen extends BaseExamKitchen {
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void reserveHappyPath() throws ParseException {
 		String url = exl.getStringData("Reserve", 1, 0);  			// Radi uniformnosti podataka i lakšeg rada sva polja 
 		String name = exl.getStringData("Reserve", 1, 1); 			// u testData.xlsx dokumentu su formatirana kao tekst,
@@ -73,7 +73,7 @@ public class TestExamKitchen extends BaseExamKitchen {
 		assertEquals(menuPage.getTotalPrice(), totalPrice);													   	// pre nego što proveri ukupnu cenu
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 	public void questionaireHappyPath() throws InterruptedException {
 		String url = exl.getStringData("Questionaire", 1, 0);
 		String reason = exl.getStringData("Questionaire", 1, 1);
